@@ -13,7 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>EurekaServer</name>
-	<description>Eureka Server for Rajlabs Server</description>
+	<description>Eureka Server for RajLabs Server</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -50,6 +50,7 @@
 			<artifactId>spring-boot-starter-tomcat</artifactId>
 			<scope>provided</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -69,6 +70,7 @@
 	</dependencyManagement>
 
 	<build>
+		<finalName>eureka-server</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

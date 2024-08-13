@@ -1,4 +1,4 @@
-package xyz._3.EurekaServer;
+package xyz.rajlabs.EurekaServer;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

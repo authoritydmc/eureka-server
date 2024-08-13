@@ -1,0 +1,20 @@
+server:
+  port: 8761 # Port on which the Eureka Server will run
+
+eureka:
+  client:
+    register-with-eureka: false  # The server itself doesn't need to register with Eureka
+    fetch-registry: false        # The server doesn't need to fetch the registry from itself
+  server:
+    wait-time-in-ms-when-sync-empty: 0  # Time to wait when no applications are registered
+  instance:
+    hostname: localhost  # The hostname for the Eureka Server (can be changed to a specific hostname)
+  dashboard:
+    enabled: true  # Enable the Eureka dashboard
+
+spring:
+  application:
+    name: eureka-server  # Name of the application
+
+
+
