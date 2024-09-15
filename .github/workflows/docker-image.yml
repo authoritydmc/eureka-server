@@ -25,7 +25,7 @@ jobs:
     - name: Build the Docker image
       id: build
       run: |
-        TIMESTAMP=$(date +%s)
+        TIMESTAMP=$(date +'%Y%m%d%H%M%S')
         docker build . --file Dockerfile --tag eureka-server:$TIMESTAMP
         echo "TIMESTAMP=$TIMESTAMP" >> $GITHUB_ENV
 
