@@ -10,10 +10,10 @@
 	</parent>
 	<groupId>in.rajlabs.eureka</groupId>
 	<artifactId>EurekaServer</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>jar</packaging>
 	<name>EurekaServer</name>
-	<description>Eureka Server for RajLabs Server</description>
+	<description>Eureka Server for RajLabs Server </description>
 	<url/>
 	<licenses>
 		<license/>
