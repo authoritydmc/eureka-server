@@ -38,8 +38,9 @@ jobs:
     - name: Tag Docker image
       run: |
         docker tag eureka-server:${{ env.TIMESTAMP }} ${{ secrets.DOCKER_HUB_USERNAME }}/eureka-server:latest
+        docker tag eureka-server:${{ env.TIMESTAMP }} ${{ secrets.DOCKER_HUB_USERNAME }}/eureka-server:${{ env.TIMESTAMP }}
 
-    - name: Push Docker image to Docker Hub
+    - name: Push Docker images to Docker Hub
       run: |
         docker push ${{ secrets.DOCKER_HUB_USERNAME }}/eureka-server:latest
-        docker push eureka-server:${{ env.TIMESTAMP }}
+        docker push ${{ secrets.DOCKER_HUB_USERNAME }}/eureka-server:${{ env.TIMESTAMP }}
